@@ -1,0 +1,93 @@
+/* Bold top level items */
+div.project.selected > div.children > div > div.name div.content {
+  font-weight: bold;
+  /* font-size: 16px; */
+  padding-bottom: 2px;
+}
+
+
+/* Prevent top level tags from being bolded */
+div.project.selected > div.children > div > div.name div.content .contentTag {
+  font-weight: normal;
+}
+
+
+/* Style text content typography */
+.content {
+  line-height: 1.45em;
+}
+
+
+/* Style collapsed item highlight colour and padding in Board view */
+div.project.collapsed {
+  border-left-color: rgb(210, 210, 210);
+  padding-bottom: 0.2em;
+}
+
+
+/* Convert italicized text to highlighted */
+.content i {
+  background-color: #FFFF00 !important;
+  text-decoration: none !important;
+  font-style: normal !important;
+}
+
+
+/* Style tags */
+.contentTagText {
+  /* text-decoration: none !important; */
+}
+
+
+/* Colored boxes behind tags */
+/*
+{
+  [title ~ ="@tag1"] {
+    background-color: #F67280 !important;
+    color: #ffffff !important;
+    padding: 2px 3px 2px !important;
+  }
+
+  [title ~ ="@tag2"] {
+    background-color: #C06C84 !important;
+    color: #ffffff !important;
+    padding: 2px 3px 2px !important;
+  }
+
+  [title ~ ="@tag3"] {
+    background-color: #F8B195 !important;
+    color: #ffffff !important;
+    padding: 2px 3px 2px !important;
+  }
+
+  [title ~ ="@tag4"] {
+    background-color: #6C5B7B !important;
+    color: #ffffff !important;
+    padding: 2px 3px 2px !important;
+  }
+
+  [title ~ ="@tag5"] {
+    background-color: #355C7D !important;
+    color: #ffffff !important;
+    padding: 2px 3px 2px !important;
+  }
+
+  [title ~ ="@tag6"] {
+    background-color: CadetBlue !important;
+    color: #ffffff !important;
+    padding: 2px 3px 2px !important;
+  }
+
+  [title ~ ="@tag7"] {
+    background-color: SeaGreen !important;
+    color: #ffffff !important;
+    padding: 2px 3px 2px !important;
+  }
+
+  [title ~ ="@tag8"] {
+    background-color: CornflowerBlue !important;
+    color: #ffffff !important;
+    padding: 2px 3px 2px !important;
+  }
+}
+*/
