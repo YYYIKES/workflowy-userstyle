@@ -10,5 +10,6 @@ Just my personal workflowy custom userstyle. <br>
   <li>Slightly more visible highlight color for collapsed items in Board View</li>
   <li>Reduced bottom padding for collapsed items in Board View</li>
   <li>Convert italicized text to highlighted</li>
-  <li>Colored boxes for tags</li>
+  <li>Estimation/priority @tags with background colors and styled label text</li>
+  <li>Colored #tag text</li>
 </ul>
