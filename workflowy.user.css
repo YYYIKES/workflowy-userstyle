@@ -11,7 +11,7 @@ div.project.selected > div.children > div > div.name div.content {
 /** Prevent top level tags from being bolded **/
 /*
 div.project.selected > div.children > div > div.name div.content .contentTag {
-    font-weight: normal;
+    font-weight: normal !important;
 }
 */
 
@@ -38,7 +38,7 @@ div.project.selected > div.children > div > div.name div.content .contentTag {
 }
 
 
-/** Style collapsed item highlight colour and padding in Board view **/
+/** Style collapsed item highlight color and padding in Board view **/
 div.project.collapsed {
     border-left-color: rgb(210, 210, 210) !important;
     padding-bottom: 0.2em !important;
@@ -53,63 +53,49 @@ div.project.collapsed {
 }
 
 
-/** Style tags **/
+/** Remove tag underlines **/
 .contentTagText {
-    /*
-    text-decoration: none !important; 
-    */
+    text-decoration: none !important;
 }
 
 
-/** Colored boxes behind tags **/
-/*
-{
-    [title ~ ="@tag1"] {
-        background-color: #F67280 !important;
-        color: #ffffff !important;
-        padding: 2px 3px 2px !important;
-    }
 
-    [title ~ ="@tag2"] {
-        background-color: #C06C84 !important;
-        color: #ffffff !important;
-        padding: 2px 3px 2px !important;
-    }
-
-    [title ~ ="@tag3"] {
-        background-color: #F8B195 !important;
-        color: #ffffff !important;
-        padding: 2px 3px 2px !important;
-    }
-
-    [title ~ ="@tag4"] {
-        background-color: #6C5B7B !important;
-        color: #ffffff !important;
-        padding: 2px 3px 2px !important;
-    }
-
-    [title ~ ="@tag5"] {
-        background-color: #355C7D !important;
-        color: #ffffff !important;
-        padding: 2px 3px 2px !important;
-    }
-
-    [title ~ ="@tag6"] {
-        background-color: CadetBlue !important;
-        color: #ffffff !important;
-        padding: 2px 3px 2px !important;
-    }
-
-    [title ~ ="@tag7"] {
-        background-color: SeaGreen !important;
-        color: #ffffff !important;
-        padding: 2px 3px 2px !important;
-    }
-
-    [title ~ ="@tag8"] {
-        background-color: CornflowerBlue !important;
-        color: #ffffff !important;
-        padding: 2px 3px 2px !important;
-    }
+/** Estimation/priority @tags with colored backgrounds, bolder, uppercase, slightly smaller text **/
+.contentTag[title*="@"] {
+    padding: 0px 4px 1px 4px !important;
+    font-size: 0.8em !important;
+    line-height: 0.7em !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
 }
-*/
+
+.contentTag[title*="@easy"] {
+    background-color: #05C800 !important;
+    color: #ffffff !important;
+}
+
+.contentTag[title*="@medium"] {
+    background-color: #FFC800 !important;
+    color: #ffffff !important;
+}
+
+.contentTag[title*="@hard"] {
+    background-color: #FF7B00 !important;
+    color: #ffffff !important;
+}
+
+.contentTag[title*="@long"] {
+    background-color: #F00 !important;
+    color: #ffffff !important;
+}
+
+.contentTag[title*="@important"] {
+    background-color: #80F !important;
+    color: #ffffff !important;
+}
+
+
+/** Colored hashtag text **/
+.contentTag[title*="#"] {
+    color: #04AAD3 !important;
+}
