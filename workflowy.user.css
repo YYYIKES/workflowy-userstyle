@@ -1,93 +1,115 @@
-/* Bold top level items */
+
+/** Bold top level items **/
+/*
 div.project.selected > div.children > div > div.name div.content {
-  font-weight: 600;
-  /* font-size: 16px; */
-  padding-bottom: 2px;
+    font-weight: 600 !important;
+    padding-bottom: 2px !important;
 }
+*/
 
 
-/* Prevent top level tags from being bolded */
+/** Prevent top level tags from being bolded **/
+/*
 div.project.selected > div.children > div > div.name div.content .contentTag {
-  font-weight: normal;
+    font-weight: normal;
+}
+*/
+
+
+/** Adjust bullet style **/
+.bullet {
+    /*
+    visibility:hidden !important;
+    */
+    color: rgb(126, 126, 126) !important;
+    opacity: 0.3 !important;
 }
 
 
-/* Style text content typography */
+/** Adjust "Show completed" switch color **/
+._1yqk6eh {
+    background-color: rgb(228, 228, 228) !important;
+}
+
+
+/** Style text content typography **/
 .content {
-  line-height: 1.45em;
+    line-height: 1.45em !important;
 }
 
 
-/* Style collapsed item highlight colour and padding in Board view */
+/** Style collapsed item highlight colour and padding in Board view **/
 div.project.collapsed {
-  border-left-color: rgb(210, 210, 210);
-  padding-bottom: 0.2em;
+    border-left-color: rgb(210, 210, 210) !important;
+    padding-bottom: 0.2em !important;
 }
 
 
-/* Convert italicized text to highlighted */
+/** Convert italicized text to highlighted **/
 .content i {
-  background-color: #FFFF00 !important;
-  text-decoration: none !important;
-  font-style: normal !important;
+    background-color: #FFFF00 !important;
+    text-decoration: none !important;
+    font-style: normal !important;
 }
 
 
-/* Style tags */
+/** Style tags **/
 .contentTagText {
-  /* text-decoration: none !important; */
+    /*
+    text-decoration: none !important; 
+    */
 }
 
 
-/* Colored boxes behind tags */
+/** Colored boxes behind tags **/
 /*
 {
-  [title ~ ="@tag1"] {
-    background-color: #F67280 !important;
-    color: #ffffff !important;
-    padding: 2px 3px 2px !important;
-  }
+    [title ~ ="@tag1"] {
+        background-color: #F67280 !important;
+        color: #ffffff !important;
+        padding: 2px 3px 2px !important;
+    }
 
-  [title ~ ="@tag2"] {
-    background-color: #C06C84 !important;
-    color: #ffffff !important;
-    padding: 2px 3px 2px !important;
-  }
+    [title ~ ="@tag2"] {
+        background-color: #C06C84 !important;
+        color: #ffffff !important;
+        padding: 2px 3px 2px !important;
+    }
 
-  [title ~ ="@tag3"] {
-    background-color: #F8B195 !important;
-    color: #ffffff !important;
-    padding: 2px 3px 2px !important;
-  }
+    [title ~ ="@tag3"] {
+        background-color: #F8B195 !important;
+        color: #ffffff !important;
+        padding: 2px 3px 2px !important;
+    }
 
-  [title ~ ="@tag4"] {
-    background-color: #6C5B7B !important;
-    color: #ffffff !important;
-    padding: 2px 3px 2px !important;
-  }
+    [title ~ ="@tag4"] {
+        background-color: #6C5B7B !important;
+        color: #ffffff !important;
+        padding: 2px 3px 2px !important;
+    }
 
-  [title ~ ="@tag5"] {
-    background-color: #355C7D !important;
-    color: #ffffff !important;
-    padding: 2px 3px 2px !important;
-  }
+    [title ~ ="@tag5"] {
+        background-color: #355C7D !important;
+        color: #ffffff !important;
+        padding: 2px 3px 2px !important;
+    }
 
-  [title ~ ="@tag6"] {
-    background-color: CadetBlue !important;
-    color: #ffffff !important;
-    padding: 2px 3px 2px !important;
-  }
+    [title ~ ="@tag6"] {
+        background-color: CadetBlue !important;
+        color: #ffffff !important;
+        padding: 2px 3px 2px !important;
+    }
 
-  [title ~ ="@tag7"] {
-    background-color: SeaGreen !important;
-    color: #ffffff !important;
-    padding: 2px 3px 2px !important;
-  }
+    [title ~ ="@tag7"] {
+        background-color: SeaGreen !important;
+        color: #ffffff !important;
+        padding: 2px 3px 2px !important;
+    }
 
-  [title ~ ="@tag8"] {
-    background-color: CornflowerBlue !important;
-    color: #ffffff !important;
-    padding: 2px 3px 2px !important;
-  }
+    [title ~ ="@tag8"] {
+        background-color: CornflowerBlue !important;
+        color: #ffffff !important;
+        padding: 2px 3px 2px !important;
+    }
 }
 */
