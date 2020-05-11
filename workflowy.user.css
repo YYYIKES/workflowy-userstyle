@@ -17,7 +17,7 @@ div.project.selected > div.children > div > div.name div.content .contentTag {
 
 
 /** Adjust bullet style **/
-.bullet {
+._uhlm2 {
     /*
     visibility:hidden !important;
     */
@@ -38,10 +38,74 @@ div.project.selected > div.children > div > div.name div.content .contentTag {
 }
 
 
+/** Darker card backgrounds in Board view **/
+._cia9q1, ._hax855{
+    border-bottom-width: 0.1em !important;
+    border-right-width: 0.1em !important;
+    border-right-color: #0000000A !important;
+    border-bottom-color: #0000000A !important;
+}
+
+
+/** Smaller "+ Add new item" in Board view **/
+._k10p6h {
+    margin: 10px 0px 0px 32px !important;
+    padding: 0px 5px 7px 5px !important;
+    background-color: #0000 !important;
+    opacity: 0.5 !important;
+}
+
+/** Reduce plus sign spacing **/
+.fa-plus {
+    margin-right: 3px !important;
+}
+
+
+/** Adjust column fitting in Board view **/
+._1vjgq66 {
+    flex: 0 0 calc(100vw / 6) !important;
+}
+
+/** Adjust padding between colums**/
+._u6tqrf {
+    padding-right: 0px !important;
+}
+
+
+/** Reduce left padding in Board view **/
+._p95zjf {
+    padding-left: 0em !important;    
+}
+
+
+/** Remove column divider line **/
+.boardColumn {
+    border-right: none !important;    
+}
+
+
+/** Reduce font size of column headings **/
+._16awal0 {
+    font-size: 0.9em !important;
+    margin-left: 0.12em !important;
+}
+
+/** Hide "Add new column" button **/
+._1en9fmv {
+    display: none !important;
+}
+
+/** Hide scroll bars in columns **/
+._u6tqrf {
+    scrollbar-width: none !important;    
+}
+
+
 /** Style collapsed item highlight color and padding in Board view **/
-div.project.collapsed {
-    border-left-color: rgb(210, 210, 210) !important;
-    padding-bottom: 0.2em !important;
+._hax855 {
+    border-left-color: #00000014 !important;
+    border-left-width: 0.2em !important;
+    padding-bottom: 0.6em !important;
 }
 
 
@@ -57,7 +121,6 @@ div.project.collapsed {
 .contentTagText {
     text-decoration: none !important;
 }
-
 
 
 /** Estimation/priority @tags with colored backgrounds, bolder, uppercase, slightly smaller text **/
