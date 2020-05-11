@@ -16,6 +16,7 @@ div.project.selected > div.children > div > div.name div.content .contentTag {
 */
 
 
+
 /** Adjust bullet style **/
 ._uhlm2 {
     /*
@@ -23,6 +24,7 @@ div.project.selected > div.children > div > div.name div.content .contentTag {
     */
     color: rgb(126, 126, 126) !important;
     opacity: 0.3 !important;
+    size: 10 !important;
 }
 
 
@@ -32,18 +34,38 @@ div.project.selected > div.children > div > div.name div.content .contentTag {
 }
 
 
-/** Style text content typography **/
-.content {
-    line-height: 1.45em !important;
+._cia9q1:focus-within, ._cia9q1:hover, ._cia9q1:active {
+    border: 1px solid rgb(183, 188, 191) !important;
 }
 
 
+._hax855:active, ._hax855:hover, ._hax855:focus-within {
+    border: 1px solid rgb(183, 188, 191) !important;
+    border-left-color: #0000001C !important;
+    border-left-width: 3px !important;
+    border-radius: 4px !important;
+}
+
+
+
 /** Darker card backgrounds in Board view **/
-._cia9q1, ._hax855{
+._cia9q1 {
+    border-bottom-width: 1px !important;
+    border-bottom-color: #0000000A !important;    
+    border-right-width: 1px !important;
+    border-right-color: #0000000A !important;
+}
+
+/** Style collapsed item highlight color and padding in Board view **/
+._hax855 {
+    border-left-color: #0000001C !important;
+    border-left-width: 3px !important;
+    padding-left: 6px !important;
+    border-radius: 4px !important;
     border-bottom-width: 0.1em !important;
+    border-bottom-color: #0000000A !important;    
     border-right-width: 0.1em !important;
     border-right-color: #0000000A !important;
-    border-bottom-color: #0000000A !important;
 }
 
 
@@ -101,14 +123,6 @@ div.project.selected > div.children > div > div.name div.content .contentTag {
 }
 
 
-/** Style collapsed item highlight color and padding in Board view **/
-._hax855 {
-    border-left-color: #00000014 !important;
-    border-left-width: 0.2em !important;
-    padding-bottom: 0.6em !important;
-}
-
-
 /** Convert italicized text to highlighted **/
 .content i {
     background-color: #FFFF00 !important;
@@ -116,12 +130,26 @@ div.project.selected > div.children > div > div.name div.content .contentTag {
     font-style: normal !important;
 }
 
-
 /** Remove tag underlines **/
 .contentTagText {
     text-decoration: none !important;
 }
 
+time {
+    font-weight: 600 !important;    
+    color: #E91EA8 !important;
+    border-bottom: 1px solid #FF9EE0 !important;
+}
+
+.bullet:hover::before {
+    opacity: 0.1 !important;
+    border-radius: 1000em !important;
+    width: 18px !important;
+    height: 18px !important;
+    margin-left: -9px !important;
+    margin-top: -9px !important;
+    background: #000 !important;
+}
 
 /** Estimation/priority @tags with colored backgrounds, bolder, uppercase, slightly smaller text **/
 .contentTag[title*="@"] {
